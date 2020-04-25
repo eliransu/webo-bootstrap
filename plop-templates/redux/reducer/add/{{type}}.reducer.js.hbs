@@ -1,0 +1,21 @@
+import { {{uppercase action}}_SUCCESS } from "./{{type}}.types";
+
+const defaultState = {
+
+};
+
+function {{type}}Reducer(state = defaultState, action) {
+switch (action.type) {
+
+//! PLOP_APPEND_REDUCER
+
+case {{uppercase action}}_SUCCESS: {
+return { ...state }; // add your logic here
+}
+default: {
+return state;
+}
+}
+}
+
+export default {{type}}Reducer;

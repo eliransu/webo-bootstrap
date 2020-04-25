@@ -1,0 +1,14 @@
+export function {{action}}Action() {
+return async function _(dispatch) {
+const promise = {{action}}(); // modify by your logic
+dispatch({
+type: [
+{{uppercase action}}_START,
+{{uppercase action}}_SUCCESS,
+{{uppercase action}}_FAILED
+],
+payload: promise
+});
+return promise;
+};
+}

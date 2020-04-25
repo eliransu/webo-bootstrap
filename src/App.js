@@ -1,9 +1,11 @@
 import React from 'react';
 import { Route } from "react-router";
+import { Provider } from 'react-redux';
 import { BrowserRouter } from "react-router-dom";
 import './App.css';
 import Main from './containers/Main/Main';
 import { AppWrapper } from './App.styled';
+import createStore from './data/store';
 
 const routes = [
   { path: "/", component: Main, isExact: true },
@@ -12,19 +14,21 @@ const routes = [
 
 function App() {
   return (
-    <AppWrapper>
-      <BrowserRouter>
-        {routes.map(route => (
-          <Route
-            exact={route.isExact}
-            key={route.path}
-            path={route.path}
-            component={route.component}
-          />
-        ))
-        }
-      </BrowserRouter>
-    </AppWrapper>
+    <Provider store={createStore()}>
+      <AppWrapper>
+        <BrowserRouter>
+          {routes.map(route => (
+            <Route
+              exact={route.isExact}
+              key={route.path}
+              path={route.path}
+              component={route.component}
+            />
+          ))
+          }
+        </BrowserRouter>
+      </AppWrapper>
+    </Provider>
   );
 }
 

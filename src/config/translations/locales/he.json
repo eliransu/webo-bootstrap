@@ -1,4 +1,6 @@
 {
   "welcome_to_webo_app": "ברוכים הבאים לאפליקציה של וובו!",
-  "change_language": "שנה שפה"
+  "change_language": "שנה שפה",
+  "login": "התחברות",
+  "welcome": "{{name}} ברוכים הבאים"
 }

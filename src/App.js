@@ -3,6 +3,7 @@ import { Route } from "react-router";
 import { Provider } from 'react-redux';
 import { BrowserRouter } from "react-router-dom";
 import './App.css';
+import { ConfigProvider } from 'antd';
 import Main from './containers/Main/Main';
 import { AppWrapper } from './App.styled';
 import createStore from './data/store';
@@ -15,19 +16,21 @@ const routes = [
 function App() {
   return (
     <Provider store={createStore()}>
-      <AppWrapper>
-        <BrowserRouter>
-          {routes.map(route => (
-            <Route
-              exact={route.isExact}
-              key={route.path}
-              path={route.path}
-              component={route.component}
-            />
-          ))
-          }
-        </BrowserRouter>
-      </AppWrapper>
+      <ConfigProvider direction="rtl">
+        <AppWrapper>
+          <BrowserRouter>
+            {routes.map(route => (
+              <Route
+                exact={route.isExact}
+                key={route.path}
+                path={route.path}
+                component={route.component}
+              />
+            ))
+            }
+          </BrowserRouter>
+        </AppWrapper>
+      </ConfigProvider>
     </Provider>
   );
 }

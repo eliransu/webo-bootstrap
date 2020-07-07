@@ -55,3 +55,5 @@ integrated with Plop && Handlebars in order to shorten redux development time.
 	- "TextSpan" a SPAN wrapper which accept the same fields as the Text above.
 	- "FlexDivCenter" a flexed centered DIV, which accept the same fields as the Text above.
 	- visit Typography.jsx for more details.
+
+### Enjoy! and contact me if your need some help: elikos1@gmail.com

@@ -1,10 +1,9 @@
-#Webo - Technology Solutions.
+![](https://webo-tech.com/wp-content/uploads/2020/02/webo-logo.png)
+# Technology Solutions
 
 ------------
 
 
-![](https://webo-tech.com/wp-content/uploads/2020/02/webo-logo.png)
-# 
 ### Webo App bootstrap
 ##### based on React, Redux, Ant Design, Styled Components, I18N and Firebase.
 

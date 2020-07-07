@@ -7,7 +7,7 @@
 this boilerplate will provide you the ability to deliver designed and translatable applications in fast, with the best development practices.
 
 eslint Airbnb plugin installation as a dev dependency required in order to format your code.
-
+integrated with Plop && Handlebars in order to shorten redux development time.
 #### Getting started:
 ##### clone the repository and then
 * run `npm install` 

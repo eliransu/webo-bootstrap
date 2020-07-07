@@ -24,6 +24,13 @@ eslint Airbnb plugin installation as a dev dependency required in order to forma
 ------------
 
 
+##### Firebase deployment
+* connect your firebase project and navigate to: https://console.firebase.google.com/u/0/project/YOUR_PROJECT/hosting
+* verify that you have changed your credentials in the firebase.js file + the package.json PROJECT_ID attribute with yours
+* run `npm run deploy` and your app is in production!
+
+------------
+
 
 ##### Translate your app
 * add you translation keys to the "he.json" + "en.json" files and use as:

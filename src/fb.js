@@ -1,12 +1,10 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDwKBCoxLBjwABSCs4MwbxruChDQXnLU8M",
-  authDomain: "webopromotions.firebaseapp.com",
-  databaseURL: "https://webopromotions.firebaseio.com/",
-  projectId: "webopromotions",
-  // storageBucket: 'gs://cpame-c8227.appspot.com',
-  // appId: "1:579768872904:web:2517e343c9b43047"
+  apiKey: "YOUR_FIREBASE_API_KEY",
+  authDomain: "YOUR_FIREBASE_DOMAIN",
+  databaseURL: "YOUR_FIREBASE_DB",
+  projectId: "YOUR_FIREBASE_PROJECT_ID",
 };
 firebase.initializeApp(firebaseConfig);
 

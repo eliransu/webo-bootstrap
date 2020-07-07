@@ -1,5 +1,5 @@
 {
-  "name": "webo-promotions-dashboard",
+  "name": "react-antd-firebase",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "start": "react-app-rewired start",
     "add-redux": "plop",
     "build": "react-app-rewired build",
-    "deploy": "npm run build && firebase deploy --project webopromotions",
+    "deploy": "npm run build && firebase deploy --project YOUR_PROJECT_ID",
     "test": "react-scripts test",
     "precommit": "NODE_ENV=production lint-staged",
     "eject": "react-scripts eject"
@@ -38,7 +38,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "lint-staged": {
+  "lint-staged": {ack
     "*.{js,jsx}": [
       "pretty-quick --staged",
       "eslint src/ --fix",

@@ -34,10 +34,10 @@ eslint Airbnb plugin installation as a dev dependency required in order to forma
 
 ##### Translate your app
 * add you translation keys to the "he.json" + "en.json" files and use as:
-        import { useTranslation } from 'react-i18next';
-        const { t } = useTranslation();
-        import { Text } from '../../components/Typography/Typography';
-        return <Text size="title">{t('welcome_to_webo_app')}</Text>
+example: `import { useTranslation } from 'react-i18next';`
+        `const { t } = useTranslation();`
+        `import { Text } from '../../components/Typography/Typography';`
+        `return <Text size="title">{t('welcome_to_webo_app')}</Text>`
 
 ------------
 

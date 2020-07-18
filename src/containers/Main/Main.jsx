@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card, Button } from 'antd';
-import { Icon } from '@ant-design/compatible';
+// import { Card, Button } from 'antd';
+// import { Icon } from '@ant-design/compatible';
 import { MainWrapper } from './Main.styled';
 import { changeLanguage, getActiveLanguage } from '../../config/translations/utils';
 import { Text, FlexDivCenter } from '../../components/Typography/Typography';
@@ -30,13 +30,13 @@ export default () => {
   return (
     <MainWrapper>
       {activeUser && <Text size="xxxlarge">{t('welcome', { name: activeUser.displayName })}</Text>}
-      <Card>
+      {/* <Card> */}
+      <FlexDivCenter>
         <Text size="title">{t('welcome_to_webo_app')}</Text>
-        <FlexDivCenter>
-          <Button margin="5px" onClick={onToggleLanguage}>{t('change_language')} <Icon inButton type="thunderbolt" /></Button>
-          <Button margin="5px" onClick={onLogin}>{t('login')} <Icon inButton type="login" /></Button>
-        </FlexDivCenter>
-      </Card>
+        <Button margin="5px" onClick={onToggleLanguage}>{t('change_language')} <Icon inButton type="thunderbolt" /></Button>
+        <Button margin="5px" onClick={onLogin}>{t('login')} <Icon inButton type="login" /></Button>
+      </FlexDivCenter>
+      {/* </Card> */}
     </MainWrapper>
   );
 };

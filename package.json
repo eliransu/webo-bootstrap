@@ -38,7 +38,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "lint-staged": {ack
+  "lint-staged": {
     "*.{js,jsx}": [
       "pretty-quick --staged",
       "eslint src/ --fix",
